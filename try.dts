@@ -292,10 +292,12 @@
 
 &usb_0 {
 	status = "okay";
+	vbus-supply = <&usb_vbus>;
 };
 
 &usb_1 {
 	status = "okay";
+	vbus-supply = <&usb_vbus>;
 };
 
 &mdio {
@@ -359,14 +361,6 @@
 	status = "okay";
 	phy-handle = <&qca8081>;
 	label = "wan";
-};
-
-&pcie_qmp0 {
-	status = "disabled";
-};
-
-&pcie0 {
-	status = "disabled";
 };
 
 &wifi {
