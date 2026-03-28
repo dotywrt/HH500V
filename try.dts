@@ -228,12 +228,29 @@
 	};
 };
 
-&blsp1_uart3 { status = "okay"; };
-&blsp1_uart5 { status = "okay"; };
-&cryptobam { status = "okay"; };
-&crypto { status = "okay"; };
-&prng { status = "okay"; };
-&qpic_bam { status = "okay"; };
+&blsp1_uart3 {
+	status = "okay";
+};
+
+&blsp1_uart5 {
+	status = "okay";
+};
+
+&cryptobam {
+	status = "okay";
+};
+
+&crypto {
+	status = "okay";
+};
+
+&prng {
+	status = "okay";
+};
+
+&qpic_bam {
+	status = "okay";
+};
 
 &qpic_nand {
 	status = "okay";
@@ -249,16 +266,29 @@
 	};
 };
 
-&qusb_phy_0 { 
-  status = "okay"; 
+&qusb_phy_0 {
+	status = "okay";
 };
-p
-&qusb_phy_1 { 
-  status = "okay"; };
-&ssphy_0 { status = "okay"; };
-&ssphy_1 { status = "okay"; };
-&usb_0 { status = "okay"; };
-&usb_1 { status = "okay"; };
+
+&qusb_phy_1 {
+	status = "okay";
+};
+
+&ssphy_0 {
+	status = "okay";
+};
+
+&ssphy_1 {
+	status = "okay";
+};
+
+&usb_0 {
+	status = "okay";
+};
+
+&usb_1 {
+	status = "okay";
+};
 
 &mdio {
 	status = "okay";
@@ -307,7 +337,9 @@ p
 	};
 };
 
-&edma { status = "okay"; };
+&edma {
+	status = "okay";
+};
 
 &dp4 {
 	status = "okay";
@@ -319,14 +351,6 @@ p
 	status = "okay";
 	phy-handle = <&qca8081>;
 	label = "wan";
-};
-
-&pcie_qmp0 {
-	status = "disabled";
-};
-
-&pcie0 {
-	status = "disabled";
 };
 
 &wifi {
