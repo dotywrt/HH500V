@@ -139,6 +139,14 @@
 			gpios = <&aw9523 11 GPIO_ACTIVE_LOW>;
 		};
 	};
+
+	usb_vbus: regulator-usb-vbus {
+		compatible = "regulator-fixed";
+		regulator-name = "usb-vbus";
+		regulator-min-microvolt = <5000000>;
+		regulator-max-microvolt = <5000000>;
+		regulator-always-on;
+	};
 };
 
 &tlmm {
@@ -351,6 +359,14 @@
 	status = "okay";
 	phy-handle = <&qca8081>;
 	label = "wan";
+};
+
+&pcie_qmp0 {
+	status = "disabled";
+};
+
+&pcie0 {
+	status = "disabled";
 };
 
 &wifi {
